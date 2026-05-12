@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevForgeTeam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-content">
+            <a class="logo" href="#home">DevForgeTeam</a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#impressum">Impressum</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+                    Dark
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Discord / Team preview -->
+        <section id="home" class="container page-layout">
+            <div class="intro">
+                <p class="eyebrow">Student-built learning project</p>
+                <h1>We are building DevForgeTeam while learning together.</h1>
+                <p class="intro-text">
+                    DevForgeTeam is a small group of students working together to build robots,
+                     APIs, cloud and Linux systems, 
+                     and many other technologies while learning and growing as a team.
+                </p>
+
+                <div class="join-box">
+                    <h2>Join our Discord</h2>
+                    <p>Come talk with us, follow what we build, or learn along with the team.</p>
+                    <div class="join-actions">
+                        <a class="discord-button" href="https://discord.gg/GyK4JUMKdq" target="_blank" rel="noopener">
+                            Join Discord
+                        </a>
+                        <a class="github-button" href="https://github.com/DevForgeTeam" target="_blank" rel="noopener">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="members" aria-labelledby="members-title">
+                <div class="members-heading">
+                    <div>
+                        <p class="eyebrow">Team</p>
+                        <h2 id="members-title">Members</h2>
+                    </div>
+                    <span id="member-count" class="member-count">0</span>
+                </div>
+
+                <p class="members-note">A small preview of the student team.</p>
+
+                <ul id="member-list" class="member-list"></ul>
+
+                <button id="member-toggle" class="member-toggle" type="button" hidden>
+                    View all members
+                </button>
+
+                <a class="org-link" href="https://github.com/DevForgeTeam" target="_blank" rel="noopener">
+                    Organization GitHub
+                </a>
+            </aside>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section-block">
+            <div class="container section-content">
+                <p class="eyebrow">About Us</p>
+                <h2>We learn by building small, real projects.</h2>
+                <p>
+                    DevForgeTeam was started as a student learning project.
+                    We collaborate to explore robotics, Linux systems, APIs, cloud technologies,
+                    and more, while also practicing web development, GitHub, design,
+                    and teamwork by building real, usable projects that we continuously improve over time.
+                </p>
+            </div>
+        </section>
+
+        <!-- GitHub projects are loaded by script.js -->
+        <section id="projects" class="section-block projects-block">
+            <div class="container">
+                <div class="section-content projects-heading">
+                    <p class="eyebrow">GitHub Projects</p>
+                    <h2>Projects from our organization.</h2>
+                    <p>
+                        These repositories are loaded from the DevForgeTeam GitHub organization.
+                    </p>
+                </div>
+
+                <div id="projects-list" class="projects-list" aria-live="polite">
+                    <p class="projects-message">Loading projects from GitHub...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section-block contact-block">
+            <div class="container section-content">
+                <p class="eyebrow">Contact</p>
+                <h2>Want to reach DevForgeTeam?</h2>
+                <p>
+                    For questions, ideas, or anything related to the team, send us an email.
+                    We try to keep communication simple and clear.
+                </p>
+
+                <div class="contact-card">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:erkansoftwaredeveloper@gmail.com">erkansoftwaredeveloper@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Short Impressum / Legal info -->
+        <section id="impressum" class="impressum-block">
+            <div class="container">
+                <div class="impressum-details">
+                    <div>
+                        <p class="eyebrow">Impressum</p>
+                        <p><strong>Responsible:</strong> Erkan, Berlin, Germany</p>
+                        <p><strong>Email:</strong> <a href="mailto:erkansoftwaredeveloper@gmail.com">erkansoftwaredeveloper@gmail.com</a></p>
+                        <p>Non-commercial student learning project.</p>
+                    </div>
+
+                    <div class="impressum-links">
+                        <a href="https://github.com/DevForgeTeam" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://discord.gg/GyK4JUMKdq" target="_blank" rel="noopener">Discord</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>DevForgeTeam - made by students, for learning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
