@@ -21,6 +21,11 @@ const teamMembers = [
         name: "Huseyin",
         role: "Student Developer",
         github: "https://github.com/hseyinblgc"
+    },
+    {
+        name: "Madhav",
+        role: "Full-Stack Developer",
+        github: "https://github.com/MadhavAgarwal1411"
     }
 ];
 
