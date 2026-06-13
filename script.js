@@ -28,11 +28,6 @@ const teamMembers = [
         github: "https://github.com/MadhavAgarwal1411"
     },
     {
-        name: "Dua Sohail",
-        role: "Android Engineer",
-        github: "https://github.com/duaaa"
-    },
-    {
         name: "Rezbee",
         role: "Software Developer",
         github: "https://github.com/rezbee-dev"
